@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 소문자로 영문 이름과 전화번호를 입력받은 후
+      // 이름은 대문자로 바꿔서 출력하기
+      // 전화번호는 가운데 4자리만 #으로 출력
+      let name = prompt("이름을 입력하세요 ");
+      let phone = prompt("전화번호 입력하세요 ");
+
+      document.write("이름 : ", name.toUpperCase() + "<br>");
+      document.write("번호 : ", phone.replace(phone.substring(3, 7), "####"));
+    </script>
+  </body>
+</html>

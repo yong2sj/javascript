@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 name="header1" onclick="valueChange()">Header1</h1>
+    <ul>
+      11111
+    </ul>
+    <script>
+      // method
+      // getElementById() : element에 id 값이 존재할 때 사용
+      // getElementsByName() : element에 name 값이 존재할 ㅓ때 사용 => NodeList 타입으로 가져온다
+      // getElementTagName() : tag로 요소 가져오기 => HTMLCollection
+
+      let h1 = document.getElementsByName("header1");
+      console.log(h1[0].innerHTML);
+      console.log(h1[0]);
+
+      // innerHTML, innerText : element의 text값을 변경
+      //                      : 태그를 사용할 수 있느냐 없느냐의 차이가 있다 (innerHTML이 태그사용 가능)
+
+      function valueChange() {
+        h1.innerHTML = "<i>Header3</i>";
+        //h1.innerText = "<i>Header3</i>";
+      }
+    </script>
+    <script>
+      let ul = document.getElementsByTagName("ul");
+      console.log(ul);
+    </script>
+  </body>
+</html>
