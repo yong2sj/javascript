@@ -7,17 +7,15 @@
     <title>Document</title>
   </head>
   <body>
-        <script>
-      let a = 3;
-      let b = 4;
-      console.log(a + b);
-      //Uncaught SyntaxError: Identifier 'a' has already benn declared
-      //let a = 5;
+    <button>Hello World</button>
+    <script>
+      let b = document.querySelector("button");
 
-      var c = 5;
-      console.log(c);
-      var c = 10;
-      const PI = 3.14;
+      // button 태그에 name 속성 추가
+      b.setAttribute("name", "hello");
+
+      // button 태그에 disabled 속성 추가
+      b.setAttribute("disabled", "");
     </script>
   </body>
 </html>

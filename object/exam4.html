@@ -7,17 +7,14 @@
     <title>Document</title>
   </head>
   <body>
-        <script>
-      let a = 3;
-      let b = 4;
-      console.log(a + b);
-      //Uncaught SyntaxError: Identifier 'a' has already benn declared
-      //let a = 5;
-
-      var c = 5;
-      console.log(c);
-      var c = 10;
-      const PI = 3.14;
-    </script>
+    <div>
+      <p id="demo">JavaScript can change HTML content</p>
+      <button
+        type="button"
+        onclick="document.querySelector('#demo').innerHTML='hello javascript'"
+      >
+        Click Me!!
+      </button>
+    </div>
   </body>
 </html>

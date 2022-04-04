@@ -5,19 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      p {
+        font-size: 30px;
+      }
+    </style>
   </head>
   <body>
-        <script>
-      let a = 3;
-      let b = 4;
-      console.log(a + b);
-      //Uncaught SyntaxError: Identifier 'a' has already benn declared
-      //let a = 5;
-
-      var c = 5;
-      console.log(c);
-      var c = 10;
-      const PI = 3.14;
-    </script>
+    <p
+      onmouseover="this.style.color='red'"
+      onmouseleave="this.style.color='black'"
+    >
+      Mouse Over Me !!!
+    </p>
+    <!-- this : p를 의미한다 -->
   </body>
 </html>
