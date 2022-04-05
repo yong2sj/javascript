@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button>Hello World</button>
+    <div>
+      <img src="../object/left-arrow.png" alt="" />
+      <img src="../object/right-arrow.png" alt="" style="display: none" />
+      <input type="button" value="변경" />
+    </div>
+    <script src="./jquery-3.6.0.min.js"></script>
+    <script>
+      $("[type='button']").click(function () {
+        $("img").toggle();
+      });
+
+      // let change = true;
+      // $("[type='button']").click(function () {
+      //   if (change) {
+      //     $("img").attr("src", "../object/right-arrow.png");
+      //     change = false;
+      //   } else {
+      //     $("img").attr("src", "../object/left-arrow.png");
+      //     change = true;
+      //   }
+      // });
+    </script>
+  </body>
+</html>
